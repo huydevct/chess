@@ -6,25 +6,11 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
-
-    <script>
-        $( function() {
-            var handle = $( "#custom-handle" );
-            $( "#slider" ).slider({
-            create: function() {
-                handle.text( $( this ).slider( "value" ) );
-            },
-            slide: function( event, ui ) {
-                handle.text( ui.value );
-            }
-            });
-        } );
-    </script>
-    <title>Chess</title>
+    <title>N-Queens Visualizer    </title>
 </head>
 <body>
     <div id="root">
-        <div style="float: left">
+        <div>
             <div id="title">
                 N-Queens Visualizer
             </div>
@@ -95,12 +81,10 @@
                 <div class="square white" ><span class="queen" id="88">♕</span></div>
             </div>
             <div class="slidecontainer">
-                <input type="range" min="1" max="1000" value="500" class="slider" id="myRange">
+                <input type="range" min="1" max="1000" value="500" class="slider" id="myRange" oninput="changeContentButton()">
+                <button id="start-sol-problem" onclick="changePositonQueen()">Random permutations: <span id="speed"></span> ms</button>
             </div>
 
-            <div id="wrap-feature">
-                <button  id="start-sol-problem" onclick="changePositonQueen()">Random permutations</button>
-            </div>
                
         </div>
         

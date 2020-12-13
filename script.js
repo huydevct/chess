@@ -1,6 +1,8 @@
 let a = [];
 let size = 8;
 let totalSolution = [];
+let change;
+let speedSolve = 500
 
 let checkResult = (x2,y2) => {
     for(let i = 1; i < x2 ;i++)
@@ -37,14 +39,12 @@ let cleanChessBoard = () => {
     }
 }
 
-let returnValue = () => {
-    console.log(document.getElementById("slider").value)
-}
-
 let changePositonQueen = () => {
     let checkEnd = 0;
 
-    let change = setInterval(() => {
+    clearInterval(change)
+
+    change = setInterval(() => {
         cleanChessBoard();
 
         let presentResult = totalSolution[checkEnd];
@@ -59,9 +59,16 @@ let changePositonQueen = () => {
             clearInterval(change);
         }
 
-    }, 100)
+    }, speedSolve)
+}
+
+let changeContentButton = () => {
+    document.getElementById("speed").innerHTML = document.getElementById("myRange").value;
+    speedSolve = parseInt(document.getElementById("myRange").value);
+    changePositonQueen()
 }
 
 window.onload = () => {
+    document.getElementById("speed").innerHTML = document.getElementById("myRange").value
     Try(1,size);
 }

@@ -13,7 +13,8 @@ html{
 }
 
 #root{
-    margin-left: 200px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 #title{
@@ -34,7 +35,6 @@ html{
     padding: 10px;
     width: 640px;
     height: 640px;
-    float: left;
 }
 
 #wrap-feature{
@@ -42,12 +42,12 @@ html{
 }
 
 .slidecontainer {
-    margin:10px auto;
-    width: 40%;
+    margin:15px auto;
+    width: 20%;
 }
   
 .slider {
--webkit-appearance: none;
+    -webkit-appearance: none;
     width: 100%;
     height: 10px;
     border-radius: 5px;
@@ -63,7 +63,7 @@ html{
 }
 
 #myRange{
-    margin-top: 15px
+    margin: 15 auto;
 }
 
 .slider::-webkit-slider-thumb {
@@ -104,9 +104,8 @@ button{
     padding: 8px 20px 10px 20px;
     text-decoration: none;
     border: none;
-    margin: 8px 4px;
-    width: 14em;
-    float: left;
+    margin: 12px 17%;
+    width: max-content
 }
 
 .square{
