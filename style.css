@@ -6,7 +6,6 @@
 
 html{
     background-image: linear-gradient(#77A1D3, #79CBCA);
-    background-repeat: no-repeat;
     margin:0;
     padding: 0;
     height: 100%;
@@ -43,7 +42,7 @@ html{
 
 .slidecontainer {
     margin:15px auto;
-    width: 20%;
+    width: max-content;
 }
   
 .slider {
@@ -63,7 +62,7 @@ html{
 }
 
 #myRange{
-    margin: 15 auto;
+    margin: 15px auto;
 }
 
 .slider::-webkit-slider-thumb {
@@ -104,7 +103,7 @@ button{
     padding: 8px 20px 10px 20px;
     text-decoration: none;
     border: none;
-    margin: 12px 17%;
+    margin: 12px 0px;
     width: max-content
 }
 
@@ -128,3 +127,30 @@ button{
     font-size: 50px;
     display: none;
 }
+
+@media only screen and (max-width: 400px) {
+    .square{
+        width: 37px;
+        height: 37px;
+    }
+    
+    .queen{
+        font-size : 20px;
+    }
+
+    #chess-board{
+        width: 296px;
+        height: 295px;
+        padding: 5px;
+        border: 10px solid #116194;;
+    }
+
+    #title{
+        padding: 60px 0;
+        font-size: 35px;
+    }
+
+    button{
+        font-size: 15px;
+    }
+  }
