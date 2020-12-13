@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+
+    <script>
+        $( function() {
+            var handle = $( "#custom-handle" );
+            $( "#slider" ).slider({
+            create: function() {
+                handle.text( $( this ).slider( "value" ) );
+            },
+            slide: function( event, ui ) {
+                handle.text( ui.value );
+            }
+            });
+        } );
+    </script>
+    <title>Chess</title>
+</head>
+<body>
+    <div id="root">
+        <div style="float: left">
+            <div id="title">
+                N-Queens Visualizer
+            </div>
+            <div id="chess-board">
+                <div class="square white" ><span class="queen" id="11">♕</span></div>
+                <div class="square black" ><span class="queen" id="12">♕</span></div>
+                <div class="square white" ><span class="queen" id="13">♕</span></div>
+                <div class="square black" ><span class="queen" id="14">♕</span></div>
+                <div class="square white" ><span class="queen" id="15">♕</span></div>
+                <div class="square black" ><span class="queen" id="16">♕</span></div>
+                <div class="square white" ><span class="queen" id="17">♕</span></div>
+                <div class="square black" ><span class="queen" id="18">♕</span></div>
+                <div class="square black" ><span class="queen" id="21">♕</span></div>
+                <div class="square white" ><span class="queen" id="22">♕</span></div>
+                <div class="square black" ><span class="queen" id="23">♕</span></div>
+                <div class="square white" ><span class="queen" id="24">♕</span></div>
+                <div class="square black" ><span class="queen" id="25">♕</span></div>
+                <div class="square white" ><span class="queen" id="26">♕</span></div>
+                <div class="square black" ><span class="queen" id="27">♕</span></div>
+                <div class="square white" ><span class="queen" id="28">♕</span></div>
+                <div class="square white" ><span class="queen" id="31">♕</span></div>
+                <div class="square black" ><span class="queen" id="32">♕</span></div>
+                <div class="square white" ><span class="queen" id="33">♕</span></div>
+                <div class="square black" ><span class="queen" id="34">♕</span></div>
+                <div class="square white" ><span class="queen" id="35">♕</span></div>
+                <div class="square black" ><span class="queen" id="36">♕</span></div>
+                <div class="square white" ><span class="queen" id="37">♕</span></div>
+                <div class="square black" ><span class="queen" id="38">♕</span></div>
+                <div class="square black" ><span class="queen" id="41">♕</span></div>
+                <div class="square white" ><span class="queen" id="42">♕</span></div>
+                <div class="square black" ><span class="queen" id="43">♕</span></div>
+                <div class="square white" ><span class="queen" id="44">♕</span></div>
+                <div class="square black" ><span class="queen" id="45">♕</span></div>
+                <div class="square white" ><span class="queen" id="46">♕</span></div>
+                <div class="square black" ><span class="queen" id="47">♕</span></div>
+                <div class="square white" ><span class="queen" id="48">♕</span></div>
+                <div class="square white" ><span class="queen" id="51">♕</span></div>
+                <div class="square black" ><span class="queen" id="52">♕</span></div>
+                <div class="square white" ><span class="queen" id="53">♕</span></div>
+                <div class="square black" ><span class="queen" id="54">♕</span></div>
+                <div class="square white" ><span class="queen" id="55">♕</span></div>
+                <div class="square black" ><span class="queen" id="56">♕</span></div>
+                <div class="square white" ><span class="queen" id="57">♕</span></div>
+                <div class="square black" ><span class="queen" id="58">♕</span></div>
+                <div class="square black" ><span class="queen" id="61">♕</span></div>
+                <div class="square white" ><span class="queen" id="62">♕</span></div>
+                <div class="square black" ><span class="queen" id="63">♕</span></div>
+                <div class="square white" ><span class="queen" id="64">♕</span></div>
+                <div class="square black" ><span class="queen" id="65">♕</span></div>
+                <div class="square white" ><span class="queen" id="66">♕</span></div>
+                <div class="square black" ><span class="queen" id="67">♕</span></div>
+                <div class="square white" ><span class="queen" id="68">♕</span></div>
+                <div class="square white" ><span class="queen" id="71">♕</span></div>
+                <div class="square black" ><span class="queen" id="72">♕</span></div>
+                <div class="square white" ><span class="queen" id="73">♕</span></div>
+                <div class="square black" ><span class="queen" id="74">♕</span></div>
+                <div class="square white" ><span class="queen" id="75">♕</span></div>
+                <div class="square black" ><span class="queen" id="76">♕</span></div>
+                <div class="square white" ><span class="queen" id="77">♕</span></div>
+                <div class="square black" ><span class="queen" id="78">♕</span></div>
+                <div class="square black" ><span class="queen" id="81">♕</span></div>
+                <div class="square white" ><span class="queen" id="82">♕</span></div>
+                <div class="square black" ><span class="queen" id="83">♕</span></div>
+                <div class="square white" ><span class="queen" id="84">♕</span></div>
+                <div class="square black" ><span class="queen" id="85">♕</span></div>
+                <div class="square white" ><span class="queen" id="86">♕</span></div>
+                <div class="square black" ><span class="queen" id="87">♕</span></div>
+                <div class="square white" ><span class="queen" id="88">♕</span></div>
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="1000" value="500" class="slider" id="myRange">
+            </div>
+
+            <div id="wrap-feature">
+                <button  id="start-sol-problem" onclick="changePositonQueen()">Random permutations</button>
+            </div>
+               
+        </div>
+        
+        
+    </div>
+
+    
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
